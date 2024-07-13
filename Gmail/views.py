@@ -13,10 +13,10 @@ def mail(request):
     body = f'Hello, \n\nI am {my_name} I completed given assienment the assienment code is \n in my git repository {git_repo} '
     email_from = settings.EMAIL_HOST_USER #host user means sender 
     recipient_list = ['tech@themedius.ai'] # initalize the reciver user
-    #cc_list = ['hr@themedius.ai']
+    cc_list = ['hr@themedius.ai']
+
     
-    
-    email = send_mail(subject, body, email_from, recipient_list)#this is function for geting the parameter for sending the mail 
+    email = send_mail(subject, body, email_from, recipient_list,cc_list)#this is function for geting the parameter for sending the mail 
     
     # Attach the image
     image_path = os.path.join(settings.MEDIA_ROOT, 'Python(Selenium).jpeg')
