@@ -6,6 +6,6 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     
-    path('', views.mail, name="Sending mails"),
+    path('', views.mail, name="Sending mails"),# This url of our views.py in this we create the mail function
     
 ]

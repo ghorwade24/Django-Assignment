@@ -126,8 +126,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587 
+EMAIL_HOST = 'smtp.gmail.com' # when we send a mail then we use SMTP means Simple Mail Transfer Protocol And this line we delcare the smtp for sending mail
+EMAIL_PORT = 587 # Port 587 is the default port for email submission, ensuring that emails are sent securely and authenticated properly.
 EMAIL_HOST_USER = 'ghorwadeshekhar93@gmail.com'
 EMAIL_HOST_PASSWORD = 'qtllejlesqdpfigk'
 EMAIL_USE_TLS = True
