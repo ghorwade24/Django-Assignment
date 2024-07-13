@@ -16,7 +16,7 @@ def mail(request):
     cc_list = ['hr@themedius.ai']
 
     
-    email = send_mail(subject, body, email_from, recipient_list,cc_list)#this is function for geting the parameter for sending the mail 
+    email = EmailMessage(subject, body, email_from, recipient_list,cc_list)#this is function for geting the parameter for sending the mail 
     
     # Attach the image
     image_path = os.path.join(settings.MEDIA_ROOT, 'Python(Selenium).jpeg')
